@@ -1,0 +1,121 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+@media(max-width:500px) {
+      body {
+            width: 500px;
+      }
+}
+
+.container {
+      width: 100%;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4203a9, #90bafc);
+      height: 100%;
+      color: #ffff;
+      padding: 10px;
+}
+
+.calculator {
+      width: 100%;
+      max-width: 66px;
+      margin-left: 50px;
+      margin-top: 50px;
+}
+
+@media(max-width:500px) {
+      .calculator {
+            margin-left: 30px;
+      }
+}
+
+@media(max-width:460px) {
+      .calculator {
+            margin-left: 15px;
+      }
+}
+
+.calculator h1 {
+      font-size: 50px;
+}
+
+.input-box {
+      margin: 40px 0;
+      padding: 30px;
+      width: 400px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.3);
+      display: flex;
+      align-items: center;
+}
+
+.input-box input {
+      flex: 1;
+      margin-right: 20PX;
+      padding: 14PX 20PX;
+      border: 0;
+      outline: 0;
+      font-size: 18PX;
+      border-radius: 5PX;
+      position: relative;
+      cursor: pointer;
+}
+
+.input-box button {
+      background: #ffff76;
+      border: 0;
+      outline: 0;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-weight: 500;
+      color: #333;
+      cursor: pointer;
+}
+
+/* .input-box input::-webkit-calendar-picker-indicator {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: auto;
+      height: auto;
+      position: absolute;
+      background-position: calc(100%-10px);
+      background-size: 30px;
+      cursor: pointer;
+} */
+
+#result {
+      font-size: 20px;
+}
+
+#result span {
+      color: red;
+      font-weight: 800;
+      font-size: 22px;
+      gap: 10px;
+}
+
+.result_p {
+      display: flex;
+      /* justify-content: center;
+      align-items: center; */
+      width: 30px;
+      height: 5px;
+      min-height: 20vh;
+      margin-left: 10px;
+}
+
+.result_p #result {
+      display: flex;
+      flex-direction: row;
+
+}
